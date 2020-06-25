@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+        {% for po in post %}
+            <h1>{{ po.name }}</h1>
+            <p>{{ po.address }}</p>
+            <h4>{{ po.phone }}</h4>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
